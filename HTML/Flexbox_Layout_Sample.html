@@ -1,0 +1,91 @@
+<!doctype html>
+<title>FlexBox-CSS-HTML</title>
+<style>
+  .grid-container { 
+    display: grid;
+  grid-template-columns: 240px 800px 240px;
+  }
+  body {
+    width: 100%;
+  }
+.Left_Side_Bar {
+  background: #ffcc00;
+  height: 430px;
+}
+.grid-container-article{
+    height: 425px;
+  background: cyan;
+  display: grid;
+  grid-template-rows: 140px 150px 153px;
+  border: thick solid #2196F3;
+  font-size: 30px;
+ }
+.Right_Side_Bar {
+  background: #FF69B4;
+  height: 430px;
+}
+.grid-container div {
+  font-size: 2vw;
+  padding: .5em;
+  color: black;
+  text-shadow: 1px 1px 0.5px black;
+  flex: 1;
+  text-align: center;
+}
+img {
+    width :150px;
+    height:148px;
+}
+.div-bottom{
+    margin-top: 13px;
+}
+  header {
+    background: #D2691E;
+    text-align: center;
+    padding: 10px 0;
+    height: 8vh;
+     }
+  footer {
+    background: #5cd65c;
+    text-align: center;
+    height: 8vh;
+  }
+  div{
+    border-bottom: thick solid #2196F3;
+  }
+</style>
+
+<body>
+  <header>
+    <h1>Cascading Sample</h1>
+  </header>
+  <div class="grid-container">
+    <div class="Left_Side_Bar">Left Side Bar</div>
+    <div class="grid-container-article">
+        <style>
+            #content {
+                position: relative;
+            }
+            #content img {
+                position: absolute;
+                top: -13px;
+                left: -13px;
+            }
+        </style>
+   <div id="content">
+        <img src="C:\Users\Lenovo\source\repos\Bridgelabz\Sample_HTML_CSS\Images\flower_image1.png"  class="ribbon" alt="" />
+        <p  style="padding-left:100px">This is a three flowered image.This is a Pencil Art image.</p>
+    </div>
+    <div id="content" class="div-bottom"> 
+        <img src="C:\Users\Lenovo\source\repos\Bridgelabz\Sample_HTML_CSS\Images\flower_image2.jpg"  class="ribbon" alt="" />
+        <p  style="padding-left:100px">This is a three flowered image.This is a Pencil Art image.</p>
+    </div>
+    <div id="content" class="div-bottom">
+        <img src="C:\Users\Lenovo\source\repos\Bridgelabz\Sample_HTML_CSS\Images\flower_image4.jpg"  class="ribbon" alt="" />
+        <p  style="padding-left:100px">This is a three flowered image.This is a Pencil Art image.</p>
+    </div>
+</div>
+    <div class="Right_Side_Bar">Right Side Bar</div>
+  </div>
+  <footer>Footer</footer>
+</body>
